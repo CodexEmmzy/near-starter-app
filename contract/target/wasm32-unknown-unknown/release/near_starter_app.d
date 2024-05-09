@@ -1,0 +1,1 @@
+/home/emmzycode/near_tutorial_project/near-starter-app/contract/target/wasm32-unknown-unknown/release/near_starter_app.wasm: /home/emmzycode/near_tutorial_project/near-starter-app/contract/src/lib.rs /home/emmzycode/near_tutorial_project/near-starter-app/contract/src/models.rs /home/emmzycode/near_tutorial_project/near-starter-app/contract/src/utils.rs

@@ -1,0 +1,27 @@
+[package]
+name = "near-starter-app"
+version = "0.1.0"
+authors = ["NEAR Friend <friend@example.com>"]
+edition = "2018"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "5.0.0"  # Update to the latest version compatible with your project
+hex = "0.4.3"
+proc-macro2 = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+borsh = "1.5.0"
+
+
+[profile.release]
+codegen-units = 1
+# Tell `rustc` to optimize for small code size.
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+# Opt into extra safety checks on arithmetic operations https://stackoverflow.com/a/64136471/249801
+overflow-checks = true
